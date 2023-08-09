@@ -1,0 +1,28 @@
+/* Reset some default margin and padding */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Create a container for the grid */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+    grid-gap: 20px; /* Gap between grid items */
+    padding: 20px; /* Add some padding to the container */
+  }
+  
+  /* Style for grid items */
+  .grid-item {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  /* Media query for responsive adjustments */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Single column layout on small screens */
+    }
+  }

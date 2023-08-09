@@ -1,0 +1,35 @@
+<style>
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+  .text-center {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    width: 300px;
+
+}
+</style>
+
+<div class="text-center">
+<form method="post" action="/login/" class="grid box">
+	<h2><i class="fas fa-plus"></i> Login</h2>
+	{% csrf_token %}
+    <div>{{ loginForm.username }}</div>
+    <div>{{ loginForm.password }}</div>
+	<button class="button large-button w100"><i class="fas fa-plus"></i> Login</button>
+</form>
+</div>
