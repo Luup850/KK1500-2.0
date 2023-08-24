@@ -19,6 +19,7 @@ from . import views
 
 urlpatterns = [
     path('', views.LandingPage, name='landing-page'),
+    path('debug/', views.DebugPage, name='debug-page'),
     path('admin/', admin.site.urls),        # Default Admin app
     path('home/', include('store.urls')),   # Store app
     path('login/', include('login.urls')),  # Login app

@@ -7,5 +7,6 @@ from django.contrib.auth.decorators import login_required
 def LandingPage(request):
     return redirect('/home')
 
-
+def DebugPage(request):
+    return render(request, 'index.html')
 
