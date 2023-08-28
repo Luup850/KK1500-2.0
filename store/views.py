@@ -6,3 +6,6 @@ def home(request):
     return HttpResponse('<h1>Store Home</h1>')
 
 # Create your views here.
+
+def buy(request):
+    return render(request,'buy.html')
