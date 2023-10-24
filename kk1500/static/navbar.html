@@ -1,0 +1,63 @@
+<!-- Navbar created using Bootstrap.com-->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="{% url 'home' %}">KK1500</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'home' %}">Beer-club <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Residents
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <!--
+                    {% for person in personss|dictsort:"room_number" %}
+                        <a class="dropdown-item" href="{% url 'person' person.id %}">{{ person.room_number }} | {{ person.name }}</a>
+                    {% endfor %}
+                    -->
+                </div>
+            </li>
+        </ul>
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group mr-2" role="group" aria-label="First group">
+                <!--
+                <a class="btn btn-outline-primary my-2 my-sm-0" type="button" href="{% url 'fines' %}">Fines
+                </a>
+                -->
+            </div>
+
+
+            <div class="btn-group mr-2" role="group" aria-label="First group">
+                <!--
+                <a class="btn btn-outline-primary my-2 my-sm-0" type="button" href="{% url 'quotes' %}">Quotes
+                </a>
+                -->
+            </div>
+            <div class="btn-group mr-2" role="group" aria-label="First group">
+                <!---
+                <a class="btn btn-outline-primary my-2 my-sm-0" type="button" href="{% url 'chugsongs' %}">Bundesange
+                </a>
+                -->
+            </div>
+            <div class="btn-group mr-2" role="group" aria-label="First group">
+
+                <!--
+                <a class="btn btn-outline-info my-2 my-sm-0" type="button" href="{% url 'person-select' %}">Buy
+                    goods
+                </a>
+                -->
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+
+

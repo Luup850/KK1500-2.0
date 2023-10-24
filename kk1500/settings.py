@@ -122,6 +122,7 @@ STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'kk1500/static'),
+    os.path.join(BASE_DIR, 'store/static'),
     ('styles', str(os.path.join(BASE_DIR, 'kk1500/styles'))),
     #BASE_DIR / 'images',
     #BASE_DIR / 'scripts',
